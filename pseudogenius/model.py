@@ -2,7 +2,7 @@ import numpy as np
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
 
-def load_model(model_name="jimnoneill/pseudogenius"):
+def load_model(model_name="jimnoneill/PseudoGenius"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
     return tokenizer, model
