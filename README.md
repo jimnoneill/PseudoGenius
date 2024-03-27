@@ -19,16 +19,28 @@ pip install .
 Usage
 To run the model with a list of DNA and protein strings:
 ```python
-from pseudogenius.model import predict
+## Usage
 
-# Replace this with your actual data
+### Using Pre-trained Model for Prediction
+
+PseudoGenius provides an easy way to classify gene sequences using a pre-trained model hosted on Hugging Face. To use the model for making predictions:
+
+```python
+from pseudogenius.model import load_model, predict
+
+# Load the pre-trained model from Hugging Face
+tokenizer, model = load_model()
+
+# List of DNA and protein sequences concatenated with tabs
 dna_protein_list = [
     "DNA_sequence\tProtein_sequence",
-    # ...
+    # ... add more sequences
 ]
 
-predictions = predict(dna_protein_list)
+# Get predictions
+predictions = predict(model, tokenizer, dna_protein_list)
 print(predictions)
+
 ```
 The model was trained on the Mycobacterium leprae genbank file ([here](https://www.ncbi.nlm.nih.gov/nuccore/CP029543.1?report=genbank)) and has shown consistent results on other mycobacterium species. It has not been tested on species with a lower GC content like E. coli.
 
