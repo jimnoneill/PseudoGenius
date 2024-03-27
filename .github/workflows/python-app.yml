@@ -24,6 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
+        pip install torch transformers
         pip install -e . # Installs the package in editable mode along with dependencies
     - name: Lint with flake8
       run: |
