@@ -16,12 +16,8 @@ cd PseudoGenius
 pip install .
 ```
 
-Usage
-To run the model with a list of DNA and protein strings:
-```python
 ## Usage
-
-### Using Pre-trained Model for Prediction
+Provide a list of "DNA\tabAminoAcid" strings. PseudoGenius will classify them as potential pseudogenes. The intent of this tool is to expedite curation of genome annotation. 
 
 PseudoGenius provides an easy way to classify gene sequences using a pre-trained model hosted on Hugging Face. To use the model for making predictions:
 
