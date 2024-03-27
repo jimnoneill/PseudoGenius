@@ -1,6 +1,8 @@
 import pandas as pd
 from Bio import SeqIO
 from transformers import AutoTokenizer
+from .genes import NormalGene, PseudoFrameShift, PseudoIncomplete, PseudoStop, PseudoMulti, Pseudos
+
 
 # Process GenBank file to extract gene information
 def process_genes(gbk_file):

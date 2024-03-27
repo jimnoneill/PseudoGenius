@@ -2,7 +2,9 @@ import os
 import numpy as np
 from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 from datasets import load_metric
-from .utils import tokenize_and_format
+from .utils import tokenize_and_format, load_tokenizer
+
+
 
 model_checkpoint = "zhihan1996/DNA_bert_6"  # You can choose a model suitable for your task
 handle = model_checkpoint.split('/')[-1]
