@@ -44,6 +44,9 @@ print(predictions)
 ```
 The model was trained on the Mycobacterium leprae genbank file ([here](https://www.ncbi.nlm.nih.gov/nuccore/CP029543.1?report=genbank)) and has shown consistent results on other mycobacterium species. It has not been tested on species with a lower GC content like E. coli.
 
+Training Your Own Model
+If you wish to train your own model with custom data, PseudoGenius also includes the training code. Refer to the training script located at pseudogenius/training.py for details on how to train your model.
+
 Contributing
 Contributions to PseudoGenius are welcome! Please refer to the contributing guidelines for more information.
 
