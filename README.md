@@ -1,5 +1,5 @@
 # PseudoGenius
-Pseudo Genius is a ML transformers-based package for the binary classification of gene sequences from Mycobacterium species into 'pseudogenes'.
+PseudoGenius is a ML transformers-based package for the binary classification of gene sequences from Mycobacterium species into 'pseudogenes'.
 
 ## Installation
 
