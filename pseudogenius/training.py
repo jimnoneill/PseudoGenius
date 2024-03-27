@@ -2,11 +2,13 @@ import os
 import numpy as np
 from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 from datasets import load_metric
+from transformers import AutoTokenizer
 from .utils import tokenize_and_format, load_tokenizer
 
 
 
 model_checkpoint = "zhihan1996/DNA_bert_6"  # You can choose a model suitable for your task
+tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 handle = model_checkpoint.split('/')[-1]
 path = f"pseudo_genius"
 
