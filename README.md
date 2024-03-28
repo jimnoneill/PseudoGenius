@@ -49,16 +49,16 @@ Confusion Matrix
 ![pseudo_genius_confusion_matrix](https://github.com/jimnoneill/PseudoGenius/assets/26029174/30def8fe-f80f-4b37-8729-bd3656b8c2e6)
 
 
-Training Your Own Model
+# Training Your Own Model
 If you wish to train your own model with custom data, PseudoGenius also includes the training code. Refer to the training script located at pseudogenius/training.py for details on how to train your model.
 
 The model was trained on the Mycobacterium leprae genbank file ([here](https://www.ncbi.nlm.nih.gov/nuccore/CP029543.1?report=genbank)) and has shown consistent results on other mycobacterium species. It has not been tested on species with a lower GC content like E. coli.
 
 
-Contributing
+# Contributing
 Contributions to PseudoGenius are welcome! Please refer to the contributing guidelines for more information.
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
