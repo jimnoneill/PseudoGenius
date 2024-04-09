@@ -24,7 +24,7 @@ PseudoGenius provides an easy way to classify gene sequences using a pre-trained
 ```python
 from pseudogenius.model import load_model, predict
 
-# Load the pre-trained model from Hugging Face
+# Load the pre-trained model from [Hugging Face](https://huggingface.co/jimnoneill/PseudoGenius)
 tokenizer, model = load_model()
 
 # List of DNA and protein sequences concatenated with tabs
