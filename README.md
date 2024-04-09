@@ -19,12 +19,12 @@ pip install .
 ## Usage
 Provide a list of "DNA\tabAminoAcid" strings. PseudoGenius will classify them as potential pseudogenes. The intent of this tool is to expedite curation of genome annotation. 
 
-PseudoGenius provides an easy way to classify gene sequences using a pre-trained model hosted on Hugging Face. To use the model for making predictions:
+PseudoGenius provides an easy way to classify gene sequences using a pre-trained model hosted on [Hugging Face](https://huggingface.co/jimnoneill/PseudoGenius). To use the model for making predictions:
 
 ```python
 from pseudogenius.model import load_model, predict
 
-# Load the pre-trained model from ([Hugging Face](https://huggingface.co/jimnoneill/PseudoGenius))
+# Load the pre-trained model from Hugging Face
 tokenizer, model = load_model()
 
 # List of DNA and protein sequences concatenated with tabs
